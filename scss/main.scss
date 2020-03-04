@@ -1,0 +1,155 @@
+@import "config";
+@import "utilities";
+@import "media";
+
+//General styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+body {
+  font-family: $font;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.lead {
+  color: $light-color;
+}
+
+.main-heading {
+  font-size: 4rem;
+  color: $dark-color;
+}
+
+.medium-heading {
+  font-size: 2rem;
+  color: $dark-color;
+}
+
+.small-heading {
+  font-size: 1.5rem;
+  color: $dark-color;
+}
+
+#header {
+  &-main {
+    background: $bg-image no-repeat center left / cover;
+    height: 100vh;
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0%;
+      right: 0;
+      bottom: 0;
+    }
+
+    .social-links {
+      display: flex;
+
+      i {
+        padding-right: 1rem;
+        color: $light-color;
+      }
+
+      :hover {
+        animation-name: change-blue;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+#projects {
+  padding: 1rem;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .project {
+    padding: 1.5rem 0;
+    display: flex;
+    text-align: left;
+    border-bottom: 0.01rem solid $dark-color;
+
+    #piano-image-container {
+      background: $piano-image no-repeat center left / cover;
+      flex: 1;
+    }
+
+    .video {
+      flex: 1;
+
+      iframe {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .description {
+      flex: 1;
+      padding: 0 1rem;
+
+      .title {
+        display: inline;
+      }
+
+      .social-links {
+        display: flex;
+
+        i {
+          color: $dark-color;
+          padding-right: 0.5rem;
+        }
+        :hover {
+          animation-name: change-light-blue;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
+        }
+      }
+    }
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+@keyframes change-blue {
+  100% {
+    color: $dark-color;
+  }
+}
+
+@keyframes change-light-blue {
+  100% {
+    color: $medium-color;
+  }
+}

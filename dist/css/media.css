@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+  #projects .project {
+    display: block;
+  }
+  .container {
+    background: green;
+  }
+}
+/*# sourceMappingURL=media.css.map */

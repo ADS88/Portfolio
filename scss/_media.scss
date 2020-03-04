@@ -1,0 +1,11 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+  #projects {
+    .project {
+      flex-direction: column;
+    }
+    .video {
+      height: 300px;
+    }
+  }
+}

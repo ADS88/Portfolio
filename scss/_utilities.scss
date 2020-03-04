@@ -1,0 +1,73 @@
+.container {
+  max-width: $website-width;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+//Padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+//Margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.category {
+  --python-color: #f99500;
+  --java-color: #054c9f;
+  --kotlin-color: #4fa8c6;
+  --web-color: #c24ec4;
+}
+
+.category {
+  display: inline-block;
+  background: white;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-python {
+  background: var(--python-color);
+}
+.category-java {
+  background: var(--java-color);
+  color: white;
+}
+.category-kotlin {
+  background: var(--kotlin-color);
+  color: white;
+}
+
+.category-web {
+  background: var(--web-color);
+  color: white;
+}
