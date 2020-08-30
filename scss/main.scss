@@ -33,6 +33,11 @@ ul {
   color: $dark-color;
 }
 
+.large-heading {
+  font-size: 3rem;
+  color: $dark-color;
+}
+
 .medium-heading {
   font-size: 2rem;
   color: $dark-color;
@@ -95,6 +100,11 @@ ul {
 
     #piano-image-container {
       background: $piano-image no-repeat center left / cover;
+      flex: 1;
+    }
+
+    #petition-image-container {
+      background: $petition-image no-repeat center left / cover;
       flex: 1;
     }
 
