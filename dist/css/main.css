@@ -116,6 +116,11 @@ ul {
   color: #094067;
 }
 
+.large-heading {
+  font-size: 3rem;
+  color: #094067;
+}
+
 .medium-heading {
   font-size: 2rem;
   color: #094067;
@@ -194,6 +199,13 @@ ul {
 
 #projects .project #piano-image-container {
   background: url("../img/piano.jpg") no-repeat center left/cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#projects .project #petition-image-container {
+  background: url("../img/petition.jpg") no-repeat center left/cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
