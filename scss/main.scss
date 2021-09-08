@@ -103,8 +103,18 @@ ul {
       flex: 1;
     }
 
+    #xylo-image-container {
+      background: $xylo-image no-repeat center left / cover;
+      flex: 1;
+    }
+
     #petition-image-container {
       background: $petition-image no-repeat center left / cover;
+      flex: 1;
+    }
+
+    #in-team-image-container {
+      background: $in-team-image no-repeat center left / cover;
       flex: 1;
     }
 

@@ -204,8 +204,22 @@ ul {
           flex: 1;
 }
 
+#projects .project #xylo-image-container {
+  background: url("../img/xylo.png") no-repeat center left/cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 #projects .project #petition-image-container {
   background: url("../img/petition.jpg") no-repeat center left/cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#projects .project #in-team-image-container {
+  background: url("../img/in-team.png") no-repeat center left/cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
